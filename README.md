@@ -90,7 +90,6 @@ For checking HTML report -
 
 ## License
 
-MIT
 
 **Free Software, Hell Yeah!**
 
