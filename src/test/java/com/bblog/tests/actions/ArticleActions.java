@@ -185,10 +185,6 @@ public class ArticleActions {
         commonActions.userNavigatesToPage(PageEnum.ProfilePage.name());
         commonActions.waitForPageLoaded(PageEnum.ProfilePage.name());
 
-//        //TODO find antother solution
-//        commonActions.userNavigatesToPage(PageEnum.ProfilePage.name());
-//        commonActions.waitForPageLoaded(PageEnum.ProfilePage.name());
-
         List<WebElement> listArticles =
                 waitCollectionElementsByXpath(0, profilePage.getListArticles(), profilePage.getWebDriver());
         assertThat("Article was successful deleted", listArticles.size(), CoreMatchers.is(0));
